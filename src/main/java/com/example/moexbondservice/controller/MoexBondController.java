@@ -1,5 +1,6 @@
 package com.example.moexbondservice.controller;
 
+import com.example.moexbondservice.DTO.FigiesDTO;
 import com.example.moexbondservice.DTO.StocksDTO;
 import com.example.moexbondservice.DTO.TickersDTO;
 import com.example.moexbondservice.service.MoexBondService;
@@ -19,5 +20,12 @@ public class MoexBondController {
     public StocksDTO getBondsFromMoex(@RequestBody TickersDTO tickers){
 
         return bondService.getBondsFromMoex(tickers);
+    }
+
+    @PostMapping("/getPriceBonds")
+    @ApiResponse(description = "получение облиаций")
+    public FigiesDTO getPricesBondsFromMoex(@RequestBody TickersDTO tickers){
+
+        return bondService.getPricesBonds(tickers);
     }
 }
