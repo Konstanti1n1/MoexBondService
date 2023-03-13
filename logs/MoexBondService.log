@@ -1,0 +1,22 @@
+2023-03-13T14:10:20.948+03:00  INFO 13328 --- [main] c.e.m.MoexBondServiceApplication         : Starting MoexBondServiceApplication using Java 18.0.2.1 with PID 13328 (C:\Users\Konstantin\OneDrive\Рабочий стол\spring project\MoexBondService\target\classes started by Konstantin in C:\Users\Konstantin\OneDrive\Рабочий стол\spring project\MoexBondService)
+2023-03-13T14:10:20.951+03:00  INFO 13328 --- [main] c.e.m.MoexBondServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-03-13T14:10:22.349+03:00  INFO 13328 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=725015e0-569b-3646-9339-4618be6b235b
+2023-03-13T14:10:22.449+03:00  INFO 13328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.moexbondservice.moexClient.CorporateBondsClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-13T14:10:22.453+03:00  INFO 13328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.moexbondservice.moexClient.GovBondsClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-13T14:10:22.744+03:00  INFO 13328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8005 (http)
+2023-03-13T14:10:22.756+03:00  INFO 13328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13T14:10:22.756+03:00  INFO 13328 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-13T14:10:22.870+03:00  INFO 13328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13T14:10:22.870+03:00  INFO 13328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1841 ms
+2023-03-13T14:10:24.284+03:00  INFO 13328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8005 (http) with context path ''
+2023-03-13T14:10:24.414+03:00  INFO 13328 --- [main] c.e.m.MoexBondServiceApplication         : Started MoexBondServiceApplication in 4.429 seconds (process running for 6.076)
+2023-03-13T14:11:13.039+03:00  INFO 13328 --- [http-nio-8005-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13T14:11:13.040+03:00  INFO 13328 --- [http-nio-8005-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13T14:11:13.042+03:00  INFO 13328 --- [http-nio-8005-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-13T14:11:13.862+03:00  INFO 13328 --- [http-nio-8005-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 342 ms
+2023-03-13T14:11:30.965+03:00  INFO 13328 --- [http-nio-8005-exec-3] c.e.m.service.MoexBondService            : Getting all bonds
+2023-03-13T14:11:30.996+03:00  INFO 13328 --- [http-nio-8005-exec-3] c.e.m.service.CacheBondsService          : Getting corporate bonds 
+2023-03-13T14:11:31.949+03:00 ERROR 13328 --- [http-nio-8005-exec-3] c.e.m.service.CacheBondsService          : Moex dont answer on request corporate bonds
+2023-03-13T14:15:05.555+03:00  INFO 13328 --- [http-nio-8005-exec-8] c.e.m.service.MoexBondService            : Getting all bonds
+2023-03-13T14:15:05.555+03:00  INFO 13328 --- [http-nio-8005-exec-8] c.e.m.service.CacheBondsService          : Getting corporate bonds 
+2023-03-13T14:15:05.927+03:00 ERROR 13328 --- [http-nio-8005-exec-8] c.e.m.service.CacheBondsService          : Moex dont answer on request corporate bonds
