@@ -32,7 +32,7 @@ public class MoexBondService implements MoexBondRepository {
         }
 
         log.info("Convert and return bonds");
-        return new StocksDTO(resultBond.stream().map(this::converToStocksDTO).toList());
+        return new StocksDTO(resultBond.stream().map(this::convertToStocksDTO).toList());
     }
 
     @Override
@@ -73,7 +73,7 @@ public class MoexBondService implements MoexBondRepository {
                 .build();
     }
 
-    public Stock converToStocksDTO(BondDto bond){
+    public Stock convertToStocksDTO(BondDto bond){
         return Stock.builder()
                 .name(bond.getName())
                 .ticker(bond.getTicker())
